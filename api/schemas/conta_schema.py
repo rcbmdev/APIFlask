@@ -4,7 +4,7 @@ from marshmallow import fields
 from ..schemas import operacao_schema
 
 class ContaSchema(ma.SQLAlchemyAutoSchema):
-    operacoes = ma.Nested(operacao_schema.OperacaoSchema, many=True, only=('nome', 'resumo', 'tipo', 'custo'))
+    operacoes = ma.Nested(operacao_schema.OperacaoSchema, many=True, only=('nome', 'resumo', 'tipo', 'custo', 'data'))
     class Meta:
         model = conta_model.Conta
         load_instance = True
