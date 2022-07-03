@@ -32,7 +32,7 @@ def atualizar_operacao(operacao, operacao_nova):
     operacao.custo = operacao_nova.custo
     operacao.tipo = operacao_nova.tipo
     operacao.data = operacao_nova.data
-    operacao.conta = operacao_nova.conta
+    operacao.conta_id = operacao_nova.conta
     db.session.commit()
     conta_service.altera_saldo_conta(operacao_nova.conta, operacao_nova, 2, valor_antigo)
     return operacao
