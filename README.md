@@ -5,14 +5,6 @@ API Flask construída para gerenciamento de contas
 
 Nessa API utilizamos o Flask como backend para gerenciamento de contas.
 
-### Pre requisitos
-
-Instalar e configurar uma linguagem de servidor (Python, PHP, dentre outras) na máquina, para rodar um servidor interno e executar a aplicação.
-
-```
-Obs: Adicionar as imagens de teste da aplicação, dentro do diretório da mesma.
-```
-
 
 ## Execução da aplicação
 Para executar a API, navegue até o diretório /api pelo prompt de comando e execute o comando:
